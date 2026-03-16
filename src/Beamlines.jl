@@ -14,11 +14,9 @@ export AbstractParams,
        MapParams,
        FourPotentialParams,
        MetaParams,
-       IBSParams,
        ApertureAt,
        ApertureShape,
        PhaseReference,
-       RateMeaning,
        RFParams,
        BMultipole,
        DefExpr,
@@ -82,7 +80,6 @@ using FunctionWrappers: FunctionWrapper
 # For example, the s position of an element can be PROPERTY of the BeamlineParams 
 # struct as one can sum the lengths of each preceding element in the Beamline.
 
-include("utils.jl")
 include("defexpr.jl")
 include("element.jl")
 include("beamline.jl")
@@ -96,7 +93,6 @@ include("alignment.jl")
 include("patch.jl")
 include("aperture.jl")
 include("misc.jl")
-include("collective.jl")
 include("keymaps.jl")
 include("element-name-handling.jl")
 
