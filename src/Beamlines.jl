@@ -5,6 +5,7 @@ export AbstractParams,
        ParamDict, 
        UniversalParams, 
        BMultipoleParams, 
+       EMultipoleParams,
        BeamlineParams,
        InitialBeamlineParams,
        AlignmentParams,
@@ -22,6 +23,7 @@ export AbstractParams,
        RateMeaning,
        RFParams,
        BMultipole,
+       EMultipole,
        DefExpr,
        Drift,
        Solenoid,
@@ -92,7 +94,8 @@ include("defexpr.jl")
 include("element.jl")
 include("beamline.jl")
 include("scalarize.jl")
-include("multipole.jl")
+include("bmultipole.jl")
+include("emultipole.jl")
 include("rf.jl")
 include("bend.jl")
 include("virtual.jl")
