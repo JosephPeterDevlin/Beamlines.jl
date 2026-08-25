@@ -172,13 +172,13 @@ MetaParams
 Base.isapprox(a::MetaParams, b::MetaParams) = true
 
 
-@kwdef mutable struct SRWakeParams{T,U} <: AbstractParams
-  sr_wake_x::T          = []
-  sr_detuning_wake_x::T = []
-  sr_wake_y::T          = []
-  sr_detuning_wake_y::T = []
-  sr_wake_z::T          = []
-  sr_wake_dt::U         = Float32(0)
+@kwdef mutable struct SRWakeParams <: AbstractParams
+  sr_wake_x           = nothing
+  sr_detuning_wake_x  = nothing
+  sr_wake_y           = nothing
+  sr_detuning_wake_y  = nothing
+  sr_wake_z           = nothing
+  sr_wake_dt          = Float32(0)
 end
 
 PROPS(::Type{SRWakeParams}) = OrderedDict{String,String}(
